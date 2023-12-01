@@ -1,4 +1,4 @@
-import React from "react";
+import data from "./data";
 const Image =({data})=>{
     console.log(data);
 return(

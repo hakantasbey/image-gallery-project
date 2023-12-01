@@ -4,7 +4,8 @@ import Image from "./image"
 
 
 function App() {
-  console.log(data);
+  // console.log(data);
+  // const{photographer,src:{large}}=data
   return (
     <div>
       <Image data={data}/>
