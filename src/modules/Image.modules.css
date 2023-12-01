@@ -1,0 +1,24 @@
+.picture{
+    width: 100%;
+    height: 100%;
+    transition: all 1s ease-in-out;
+    object-fit: cover;
+}
+
+.transporter{
+    width: 250px;
+    height: 300px;
+}
+
+.picture:hover{
+    transform: scale(1.3);
+    cursor: zoom-in;
+}
+.imageCard{
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    justify-content: center;
+    align-items:center;
+    margin-top: 1rem;
+}

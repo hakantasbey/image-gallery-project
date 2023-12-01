@@ -8,6 +8,7 @@ function App() {
   // const{photographer,src:{large}}=data
   return (
     <div>
+      <h1>Image Gallery</h1>
       <Image data={data}/>
     </div>
   );
