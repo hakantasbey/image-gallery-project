@@ -3,11 +3,16 @@
     height: 100%;
     transition: all 1s ease-in-out;
     object-fit: cover;
+    border-radius: 1rem;
+    border: 1px solid white;
 }
 
 .transporter{
     width: 250px;
     height: 300px;
+    overflow: hidden;
+    border-radius: 1rem;
+    border: 1px solid white;
 }
 
 .picture:hover{
@@ -17,8 +22,16 @@
 .imageCard{
     display: flex;
     flex-wrap: wrap;
-    gap: .5rem;
+    gap: 4rem;
     justify-content: center;
     align-items:center;
-    margin-top: 1rem;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+}
+
+.imageCaption{
+    font-size: 1.3rem;
+    text-align: center;
+    color: white;
+    margin-top: .5rem;
 }

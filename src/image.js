@@ -1,17 +1,19 @@
 import data from "./data";
+import ImageStyles from "./modules/Image.module.css";
 
-const Image =({data})=>{
-    console.log(data);
-return(
-    <>
-    <h1>İmage Galery</h1>
-    <div className="container">
-<div className="images">
-    <img src="https://images.pexels.com/photos/12185664/pexels-photo-12185664.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="" />
-</div>
-<p>Lucía Montenegro</p>
+const Image = () => {
+  return (
+    <div className={ImageStyles.imageCard}>
+      {data.map((item, index) => (
+        // console.log(item)
+        <div key={index}>
+          <div className={ImageStyles.transporter}>
+            <img className={ImageStyles.picture} src={item.src.large} alt="" />
+          </div>
+          <h3 className={ImageStyles.imageCaption}>{item.photographer}</h3>
+        </div>
+      ))}
     </div>
-    </>
-)
-}
+  );
+};
 export default Image;
